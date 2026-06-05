@@ -193,14 +193,15 @@ cd RepoURL
 
 ### 3 Configure the database in
 
-src/main/resources/application.properties
+spring.datasource.url=jdbc:mysql://150.254.36.243:3306/ait91848
+spring.datasource.username=ait91848
+spring.datasource.password=UL91848
 
-Example configuration
-
-spring.datasource.url=jdbc:mysql://localhost:3306/b2b_food_db  
-spring.datasource.username=root  
-spring.datasource.password=yourpassword  
 spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.database-platform=org.hibernate.dialect.MySQL8Dialect
+
+server.port=8080
 
 ### 4 Run the application
 
